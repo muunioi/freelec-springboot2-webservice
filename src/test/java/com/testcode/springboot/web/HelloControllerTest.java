@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(controllers = HelloController.class) //Web에 집중한 Annotation(@)
 public class HelloControllerTest {
 
-    @Autowired //스프링이 관리하는 bean을 주입 받음fd
+    @Autowired //스프링이 관리하는 bean을 주입 받음
     private MockMvc mvc; //Web API 테스트 시에 사용 - HTTP GET, POST 등에 대한 API 테스트 가능
 
     @Test
