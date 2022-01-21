@@ -1,4 +1,4 @@
-package com.testcode.springboot;
+package com.muunioi.book.springboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

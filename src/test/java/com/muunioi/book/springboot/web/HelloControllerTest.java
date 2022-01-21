@@ -1,4 +1,4 @@
-package com.testcode.springboot.web;
+package com.muunioi.book.springboot.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

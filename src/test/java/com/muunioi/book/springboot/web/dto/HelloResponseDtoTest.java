@@ -1,4 +1,4 @@
-package com.testcode.springboot.web.dto;
+package com.muunioi.book.springboot.web.dto;
 
 import org.junit.Test;
 /* import static org.junit.Assert.assertThat; */
