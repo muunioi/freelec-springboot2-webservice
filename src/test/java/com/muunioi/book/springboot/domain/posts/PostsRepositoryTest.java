@@ -18,7 +18,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    @After
+    @After //테스트 DB(H2 Database) 데이터 정리
     public void cleanup() {
         postsRepository.deleteAll();
     }
@@ -29,14 +29,14 @@ public class PostsRepositoryTest {
         String title = "테스트 게시글";
         String content = "테스트 본문";
 
-        postsRepository.save(Posts.builder()
+        postsRepository.save(Posts.builder() // Posts 테이블에 insert/update 쿼리 실행
                 .title(title)
                 .content(content)
                 .author("muunii06@gmail.com")
                 .build());
 
         //when
-        List<Posts> postsList = postsRepository.findAll();
+        List<Posts> postsList = postsRepository.findAll(); // Posts 테이블 조회
 
         //then
         Posts posts = postsList.get(0);
