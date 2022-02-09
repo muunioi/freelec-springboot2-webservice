@@ -1,25 +1,38 @@
-<!--<!DOCTYPE HTML>-->
-<!--<html>-->
-<!--<head>-->
-<!--    <title>스프링 부트 웹서비스</title>-->
-<!--    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />-->
 
-<!--</head>-->
-<!--<body>-->
-<!--    <h1>스프링 부트로 시작하는 웹 서비스</h1>-->
-<!--</body>-->
-<!--</html>-->
+{{>layout/header}} <!-- <!DOCTYPE HTML> ... </head><body> -->
 
-{{>layout/header}}
-
+    <br>
     <h1>스프링 부트로 시작하는 웹 서비스</h1>
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
-                <a href="/posts/save" role="button" class="btn btn=primary">글 등록</a>
+                <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
             </div>
         </div>
+
+        <br>
+        <!-- 목록 출력 영역 -->
+        <table class="table table-horizontal table-bordered">
+            <thead class="thead-strong">
+            <tr>
+                <th>게시글번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>최종수정일</th>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+            {{#posts}} <!-- posts List 순회 = for 문 -->
+                <tr>
+                    <td>{{id}}</td> <!-- List 안 객체 필드 사용 -->
+                    <td>{{title}}</td>
+                    <td>{{author}}</td>
+                    <td>{{modifiedDate}}</td>
+                </tr>
+            {{/posts}}
+            </tbody>
+        </table>
+
     </div>
 
-
-{{>layout/footer}}
+{{>layout/footer}} <!-- <script/> </body> </html>-->
