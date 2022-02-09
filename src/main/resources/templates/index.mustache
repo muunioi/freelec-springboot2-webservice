@@ -18,6 +18,7 @@
                 <th>게시글번호</th>
                 <th>제목</th>
                 <th>작성자</th>
+                <th>최초등록일</th>
                 <th>최종수정일</th>
             </tr>
             </thead>
@@ -27,6 +28,7 @@
                     <td>{{id}}</td> <!-- List 안 객체 필드 사용 -->
                     <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
+                    <td>{{createdDate}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>
             {{/posts}}
