@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.testcode.springboot.web.HelloControllerTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-TURGS4P" time="0.0">
+  <properties/>
+  <system-out><![CDATA[22:49:54.882 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.testcode.springboot.web.HelloControllerTest]
+22:49:54.890 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:49:54.898 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:49:54.917 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.testcode.springboot.web.HelloControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+22:49:54.934 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.testcode.springboot.web.HelloControllerTest], using SpringBootContextLoader
+22:49:54.938 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.testcode.springboot.web.HelloControllerTest]: class path resource [com/testcode/springboot/web/HelloControllerTest-context.xml] does not exist
+22:49:54.938 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.testcode.springboot.web.HelloControllerTest]: class path resource [com/testcode/springboot/web/HelloControllerTestContext.groovy] does not exist
+22:49:54.938 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.testcode.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:49:54.939 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.testcode.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:49:54.996 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.testcode.springboot.web.HelloControllerTest]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
