@@ -2,14 +2,23 @@
 {{>layout/header}} <!-- <!DOCTYPE HTML> ... </head><body> -->
 
     <br>
-    <h1>스프링 부트로 시작하는 웹 서비스</h1>
+    <h1>스프링부트로 시작하는 웹 서비스 Ver.2</h1>
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
                 <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+                {{#userName}} <!--userName이 있다면-->
+                    Logged in as: <span id="user">{{userName}}</span>
+                    <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+                    <!--/logout : 스프링 시큐리티 기본 제공 로그아웃 URL-->
+                {{/userName}}
+                {{^userName}} <!--userName이 없다면-->
+                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+<!--                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>-->
+                    <!--/logout : 스프링 시큐리티 기본 제공 로그인 URL-->
+                {{/userName}}
             </div>
         </div>
-
         <br>
         <!-- 목록 출력 영역 -->
         <table class="table table-horizontal table-bordered">

@@ -1,5 +1,6 @@
 package com.muunioi.book.springboot.domain.posts;
 
+import com.muunioi.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor // Lombok 어노테이션, 기본 생성자 자동 추가
 @Entity // JPA 어노테이션, table과 링크 될 클래스 임을 나타냄 (보통 Entity Class 라고 함)
 // -> 실제 쿼리를 날리는 것이 아니라 Entity 클래스 수정을 통해 DB 데이터 작업
-public class Posts extends BaseTimeEntity{
+public class Posts extends BaseTimeEntity {
 
     @Id //pk
     @GeneratedValue(strategy = GenerationType.IDENTITY) //pk 생성규칙
